@@ -35,6 +35,6 @@ If You find any problems or have any questions, please contact with me.
 
 
 ## Acknowledgments and Licenses
-The calculation of CodeBLEU in our work is adapted from CodeBLEU (https://github.com/microsoft/CodeXGLUE/).
-The public CosT dataset used in our work is from MuST-CoST (https://github.com/reddy-lab-code-research/MuST-CoST/)
-All license clauses are in the LICENSE file.
+* The calculation of CodeBLEU in our work is adapted from CodeBLEU (https://github.com/microsoft/CodeXGLUE/).
+* The public CosT dataset used in our work is from MuST-CoST (https://github.com/reddy-lab-code-research/MuST-CoST/)
+* All license clauses are in the LICENSE file.
