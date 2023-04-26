@@ -1,5 +1,5 @@
 # PSSPT: Preserving Semantic Similarity for Program Translation
-![backbone](backbone.svg)
+![backbone](backbone.png)
 This repo has the PyTorch implementation and datasets of our ASE 2023 paper: PSSPT: Preserving Semantic Similarity for Program Translation
 
 ## Introduction
