@@ -1,11 +1,9 @@
-# Beyond the Lexical Consistency: Leveraging Program Semantics for Program Translation
+# Beyond Lexical Consistency: Preserving Semantic Consistency for Program Translation
 ![backbone](backbone.png)
-This repo has the PyTorch implementation and datasets of our ASE 2023 paper: Beyond the Lexical Consistency: Leveraging Program Semantics for Program Translation
+This repo has the PyTorch implementation and datasets of our ICDM 2023 paper: Beyond Lexical Consistency: Preserving Semantic Consistency for Program Translation
 
 ## Introduction
-Program Translation aims to convert the input programs from one programming language to another. Automatic program translation is a prized target of software engineering research, which leverages the reusability of projects and improves the efficiency of development. Recently, thanks to the rapid development of deep learning model architectures and the availability of large-scale parallel corpus of programs, the performance of program translation has been greatly improved. However, the existing program translation models are still far from satisfactory, in terms of the quality of generated programs. In this paper, we argue that a major limitation of the current approaches is that they only consider lexical consistency as the training objective, but misses the semantic consistency between the generated program and the target program, which is also critical for the task. To make the program translation model more semantically aware, we propose a general framework named **P**reserving **S**emantic **C**onsistency for **P**rogram **T**ranslation (**PSCPT**), which considers both lexical and semantic consistency in the training process of program translation and can be easily applied to all encoder-decoder methods with various neural networks (e.g., LSTM, Transformer) as the backbone.
-We conduct extensive experiments on the benchmark dataset CoST[2], which consists of both snippet-level and program-level parallel data from 7 programming languages and up to 42 programming language pairs. 
-Experimental results show that with CodeBERT as the backbone, our approach outperforms not only the state-of-the-art open-source models but also the commercial closed large language model (e.g., CodeX) on the program translation task.
+Program Translation aims to convert the input programs from one programming language to another. Automatic program translation is a prized target of software engineering research, which leverages the reusability of projects and improves the efficiency of development. Recently, thanks to the rapid development of deep learning model architectures and the availability of large-scale parallel corpus of programs, the performance of program translation has been greatly improved. However, the existing program translation models are still far from satisfactory, in terms of the quality of translated programs. In this paper, we argue that a major limitation of the current approaches is that they only consider lexical consistency in program translation, but misses semantic consistency, which is also critical for the task. To make the program translation model more semantically aware, we propose a general framework named Preserving Semantic Consistency for Program Translation(PSCPT), which considers semantic consistency with regularization in the training objective of program translation and can be easily applied to all encoder-decoder methods with various neural networks(e.g., LSTM, Transformer) as the backbone. We conduct extensive experiments in 7 general programming languages. Experimental results show that with CodeBERT as the backbone, our approach outperforms not only the state-of-the-art open-source models but also the commercial closed large language model(e.g., text-davinci-002, text-davinci-003) on the program translation task. Our replication package(including code, data, etc.) is publicly available at https://anonymous.4open.science/r/PSCPT.
 
 
 ## Requirements
@@ -33,7 +31,7 @@ python run.py --model_type='roberta' --output_dir='saved_models/Java-C#/' --trai
 ```
 
 ## Contact
-If You find any problems or have any questions, please contact with me.
+If You find any problems or have any questions, please contact me.
 
 
 ## Acknowledgments and Licenses
